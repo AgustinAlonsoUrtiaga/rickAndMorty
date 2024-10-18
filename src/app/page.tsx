@@ -67,7 +67,7 @@ export default function HomePage() {
     if (episodeId === null) {
       setSelectedEpisode(null);
     } else {
-      const episode = episodes.find(ep => ep.id === episodeId) || null; // Evitar undefined, retornar null si no encuentra el episodio
+      const episode = episodes.find(ep => ep.id === episodeId) || null;
       setSelectedEpisode(episode);
       if (!episodeId) setCurrentPage(1);
     }
